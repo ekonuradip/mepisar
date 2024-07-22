@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mepisar Tani</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-logo" href="#">Mepisar <span>Tani</span></a>
+        <div class="navbar-center">
+          <a class="active" href="#">Beranda</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Pemetaan</a>
+          <a href="#">Artikel</a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-btn-daftar" href="#"
+            ><div class="text-daftar">Daftar</div></a
+          >
+          <a class="navbar-btn-masuk" href="#"
+            ><div class="text-masuk">Masuk</div></a
+          >
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1>
+          Selamat Datang <br />
+          Di Mepisar Tani <br />Indonesia.
+        </h1>
+        <p>
+          Mepisar Tani hadir untuk temukan kemudahan dalam <br />
+          transaksi produk pertanian, melihat pemetaan hasil produksi <br />
+          pertanian dan edukasi tentang ilmu dan berita terbaru seputar <br />
+          pertanian di Negara Indonesia.
+        </p>
+        <button>Get More</button>
+      </section>
+      <section class="service-section">
+        <div>
+          <h1>Layanan kami</h1>
+        </div>
+        <div>
+          <h2>Kemudahan kehidupanmu dengan MEPISAR TANI</h2>
+        </div>
+        <div class="card-content">
+          <div class="card-item">
+            <img src="assets/svg/marketplace.svg" alt="Your Icon" />
+            <h2>Marketplace</h2>
+            <p>
+              Mepisar Tani memberikan kemudahan dalam melakukan transaksi jual
+              beli produk-produk pertanian untuk mendukung kesejahteraan petani
+              Indonesia
+            </p>
+          </div>
+          <div class="card-item">
+            <img src="assets/svg/pemetaan.svg" alt="Your Icon" />
+            <h2>Pemetaan</h2>
+            <p>
+              Informasi pemetaan hasil produksi daerah lain dapat memberikan
+              referensi baru bagi para petani dan masyarakat indonesia
+            </p>
+          </div>
+          <div class="card-item">
+            <img src="assets/svg/article.svg" alt="Your Icon" />
+            <h2>Article</h2>
+            <p>
+              Edukasi pertanian dan berita terbaru seputar pertanian Indonesia
+              membantu petani dan masyarakat dalam meningkatkan wawasan dunia
+              pertanian.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="search-section">
+        <div>
+          <h1>Temukan Produk Pertanianmu</h1>
+        </div>
+        <div class="box">
+          <h2>
+            Sekarang Anda dapat menghemat semua waktu dan biaya dengan kemudahan
+            bertransaksi di Mepisar Tani.
+          </h2>
+        </div>
+        <div class="tab-container">
+          <div class="tab">Jual</div>
+          <div class="tab">Beli</div>
+        </div>
+
+        <div class="filter-container">
+          <input type="text" class="filter-input" placeholder="Lokasi" />
+          <input
+            type="range"
+            class="filter-input"
+            min="0"
+            max="100"
+            value="50"
+            step="1"
+          />
+          <!-- Contoh range harga -->
+          <input type="text" class="filter-input" placeholder="Nama Produk" />
+          <button class="search-button">Search</button>
+        </div>
+      </section>
+      <section class="item-section">
+        <div>
+          <h1>Rekomendasi Produk Pertanian</h1>
+        </div>
+        <div class="right-side">
+          <div class="right-side-box">
+            <input type="text" id="taskInputImage" placeholder="Image URL" />
+            <input type="text" id="taskInputName" placeholder="Nama produk" />
+            <input type="text" id="taskInputPrice" placeholder="Harga produk" />
+            <textarea
+              id="taskInputDescription"
+              placeholder="Deskripsi"
+            ></textarea>
+            <input type="text" id="taskInputLocation" placeholder="Lokasi" />
+            <button onclick="addTask()">Tambah</button>
+          </div>
+        </div>
+        <div class="items-card-content" id="taskList">
+          <div class="items-card-item">
+            <img src="assets/img/item1.jpg" alt="item 1" />
+            <h2>Wortel Chantenay</h2>
+            <h3>Rp 8.000 - 20.000/Kg</h3>
+            <p>
+              Panjang umbi akarnya hanya sekitar 10-12 cm dengan lebar sekitar
+              3-4 cm. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ex, dignissimos?
+            </p>
+            <div class="items-location">
+              <i data-feather="map-pin"></i>
+              <h4>Parang, Jawa TImur</h4>
+            </div>
+          </div>
+          <div class="items-card-item">
+            <img src="assets/img/item2.jpg" alt="item 1" />
+            <h2>Tomat Merah</h2>
+            <h3>Rp.8.000 - 18.000/Kg</h3>
+            <p>
+              Tomat merah dengan hasil panen yang baik dan kemasan yang higienis
+              serta.....
+            </p>
+            <div class="items-location">
+              <i data-feather="map-pin"></i>
+              <h4>Plaosan, Jawa TImur</h4>
+            </div>
+          </div>
+          <div class="items-card-item">
+            <img src="assets/img/item3.jpg" alt="item 1" />
+            <h2>Kentang Minion</h2>
+            <h3>Rp. 16.500/Kg</h3>
+            <p>
+              Panjang umbi akarnya hanya sekitar 10-12 cm dengan lebar sekitar
+              3-4 cm....
+            </p>
+            <div class="items-location">
+              <i data-feather="map-pin"></i>
+              <h4>Kawedanan, Jawa TImur</h4>
+            </div>
+          </div>
+          
+        </div>
+       
+        <div>
+          <h1>Tips dan Edukasi</h1>
+        </div>
+        <div class="items-card-content">
+          <div class="items-card-item">
+            <img src="assets/img/item4.jpg" alt="item 1" />
+            <h2 class="h2-tips">Budidaya Jahe Merah dengan karung</h2>
+
+            <p class="p-tips">
+              Sekarang sudah banyak beragam inovasi tentang cara budidaya
+              tumbuhan, salah satunya....
+            </p>
+
+            <h4 class="h4-tips">05 Januari 2022</h4>
+          </div>
+          <div class="items-card-item">
+            <img src="assets/img/item5.jpg" alt="item 1" />
+            <h2 class="h2-tips">Pengaruh Cuaca Terhadap Pertumbuhan Benih</h2>
+
+            <p class="p-tips">
+              Perlu diperhatikan saat terjadi pergantian musim petani harus
+              dapat mempunyai strategi penting...
+            </p>
+
+            <h4 class="h4-tips">14 Februari 2022</h4>
+          </div>
+          <div class="items-card-item">
+            <img src="assets/img/item6.jpg" alt="item 1" />
+            <h2 class="h2-tips">Gelombang Kenaikan Harga Kian Menjerit</h2>
+            <p class="p-tips">
+              Kenaikan harga pangan pada pasar membuat segala aspek pertanian
+              mengalami lonjakan kenaikan harga.....
+            </p>
+
+            <h4 class="h4-tips">07 Juli 2022</h4>
+          </div>
+        </div>
+      </section>
+      <section class="footer-section">
+        <div class="left-side">
+          <h2>Hubungi kami Jika Anda memiliki Pertanyaan dan Laporan</h2>
+          <div class="footer-box">
+            <h4>Kontak</h4>
+            <div class="footer-contact-us">
+              <img src="assets/icon/icon.png" alt="" />
+              <h5>
+                Jl. Saxofone, Perumahan Saxofone Land, Blok AD, No 23, Lantai 1,
+                Lowokwaru, Malang, 21309
+              </h5>
+            </div>
+            <div class="footer-contact-us">
+              <img src="assets/icon/icon2.png" alt="" />
+              <h5>022-6545-2041</h5>
+            </div>
+            <div class="footer-contact-us">
+              <img src="assets/icon/icon3.png" alt="" />
+              <h5>MepisarTani @gmail.com</h5>
+            </div>
+            <h5>Social Media</h5>
+            <div class="social-media">
+              <img src="assets/icon/icon4.png" alt="" />
+              <img src="assets/icon/icon5.png" alt="" />
+              <img src="assets/icon/icon6.png" alt="" />
+              <img src="assets/icon/icon7.png" alt="" />
+              <h5>Mepisar Tani</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="right-side-box">
+            <h2>Ada Pertanyaan?</h2>
+            <form>
+              <input
+                class="text-box"
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Masukkan Nama Anda"
+              />
+
+              <input
+                class="text-box"
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Masukkan Email Anda"
+              />
+
+              <textarea
+                class="text-box"
+                id="message"
+                name="message"
+                required
+                placeholder="Masukkan Pertanyaan Anda"
+              ></textarea>
+
+              <button type="submit">Kirim Pertanyaan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="js/script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</html>
